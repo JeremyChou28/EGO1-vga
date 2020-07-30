@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Jul 30 15:22:31 2020
+| Date         : Thu Jul 30 20:41:46 2020
 | Host         : DESKTOP-TSK87CH running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vga2_control_sets_placed.rpt
 | Design       : vga2
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    25 |
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    27 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,8 +35,9 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      2 |            1 |
-|      9 |            1 |
+|      4 |            1 |
 |     10 |            2 |
+|     11 |            1 |
 +--------+--------------+
 
 
@@ -46,25 +47,26 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              11 |            7 |
+| No           | No                    | No                     |              13 |            8 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              10 |            3 |
+| No           | Yes                   | No                     |              14 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              10 |            3 |
+| Yes          | Yes                   | No                     |              10 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------+---------------+------------------+------------------+----------------+
-|   Clock Signal   | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+------------------+---------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG   |               |                  |                1 |              2 |
-|  vga_clk_reg_n_0 |               |                  |                6 |              9 |
-|  vga_clk_reg_n_0 |               | hcount_ov        |                3 |             10 |
-|  vga_clk_reg_n_0 | hcount_ov     | vcount           |                3 |             10 |
-+------------------+---------------+------------------+------------------+----------------+
++-----------------------+-------------------+-------------------+------------------+----------------+
+|      Clock Signal     |   Enable Signal   |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------+-------------------+-------------------+------------------+----------------+
+|  clk_IBUF_BUFG        |                   |                   |                1 |              2 |
+|  vga_clk_reg_n_0_BUFG |                   | vcount_reg__0[9]  |                4 |              4 |
+|  vga_clk_reg_n_0_BUFG |                   | hcount[9]_i_1_n_0 |                3 |             10 |
+|  vga_clk_reg_n_0_BUFG | hcount[9]_i_1_n_0 | vcount            |                5 |             10 |
+|  vga_clk_reg_n_0_BUFG |                   |                   |                7 |             11 |
++-----------------------+-------------------+-------------------+------------------+----------------+
 
 

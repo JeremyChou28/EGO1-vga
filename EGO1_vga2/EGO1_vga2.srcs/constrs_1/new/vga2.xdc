@@ -6,8 +6,9 @@ set_property -dict {PACKAGE_PIN D7 IOSTANDARD LVCMOS33} [get_ports hsync]
 set_property -dict {PACKAGE_PIN C4 IOSTANDARD LVCMOS33} [get_ports vsync]
 
 #拨码开关sw7,sw6，控制vga显示的图像
-set_property -dict {PACKAGE_PIN P5 IOSTANDARD LVCMOS33} [get_ports {switch[1]}]
-set_property -dict {PACKAGE_PIN P4 IOSTANDARD LVCMOS33} [get_ports {switch[0]}]
+set_property -dict {PACKAGE_PIN P5 IOSTANDARD LVCMOS33} [get_ports {switch[2]}]
+set_property -dict {PACKAGE_PIN P4 IOSTANDARD LVCMOS33} [get_ports {switch[1]}]
+set_property -dict {PACKAGE_PIN P3 IOSTANDARD LVCMOS33} [get_ports {switch[0]}]
 
 #vga的颜色rgb
 set_property -dict {PACKAGE_PIN F5 IOSTANDARD LVCMOS33} [get_ports {disp_RGB[0]}]

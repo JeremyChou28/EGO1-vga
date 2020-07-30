@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 20:16:00 2020
+# Process ID: 19204
+# Current directory: E:/FPGA-Projects/EGO1_VGA/EGO1_vga3/EGO1_vga3.runs/synth_1
+# Command line: vivado.exe -log vga3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga3.tcl
+# Log file: E:/FPGA-Projects/EGO1_VGA/EGO1_vga3/EGO1_vga3.runs/synth_1/vga3.vds
+# Journal file: E:/FPGA-Projects/EGO1_VGA/EGO1_vga3/EGO1_vga3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga3.tcl -notrace
