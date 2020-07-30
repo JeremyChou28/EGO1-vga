@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 11:24:47 2020
+# Process ID: 13864
+# Current directory: E:/FPGA-Projects/lab6_vga/lab6_vga.runs/impl_1
+# Command line: vivado.exe -log top_flyinglogo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_flyinglogo.tcl -notrace
+# Log file: E:/FPGA-Projects/lab6_vga/lab6_vga.runs/impl_1/top_flyinglogo.vdi
+# Journal file: E:/FPGA-Projects/lab6_vga/lab6_vga.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_flyinglogo.tcl -notrace
