@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1596112830">
-  <File Type="BITSTR-BMM" Name="vga2_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="vga2_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="vga2_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="vga2_power_routed.rpt"/>
   <File Type="PA-TCL" Name="vga2.tcl"/>
-  <File Type="OPT-TIMING" Name="vga2_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="vga2_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="vga2_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="vga2_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="vga2_reports.tcl"/>
+  <File Type="OPT-DCP" Name="vga2_opt.dcp"/>
   <File Type="OPT-DRC" Name="vga2_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="vga2.hwdef"/>
   <File Type="PWROPT-DCP" Name="vga2_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="vga2_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="vga2_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="vga2_placed.dcp"/>
   <File Type="PLACE-IO" Name="vga2_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="vga2_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="vga2_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="vga2_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="vga2_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="vga2_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="vga2_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="vga2.bgn"/>
-  <File Type="PLACE-TIMING" Name="vga2_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="vga2_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="vga2.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="vga2_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="vga2_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="vga2_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="vga2.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="vga2_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="vga2_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="vga2_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="vga2_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="vga2_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="vga2_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="vga2.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="vga2_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="vga2.mmi"/>
+  <File Type="BITSTR-LTX" Name="vga2.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="vga2_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="vga2.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vga2_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="vga2.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vga2_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="vga2.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="vga2_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="vga2_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="vga2_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="vga2_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="vga2_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="vga2_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="vga2_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="vga2_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="vga2_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="vga2_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="vga2_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="vga2_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="vga2_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="vga2_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="vga2_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="vga2_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="vga2_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="vga2_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="vga2.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="vga2_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="vga2.rbt"/>
   <File Type="BITSTR-NKY" Name="vga2.nky"/>
   <File Type="BG-DRC" Name="vga2.drc"/>

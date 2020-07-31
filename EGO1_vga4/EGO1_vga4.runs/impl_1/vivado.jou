@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 09:55:42 2020
+# Process ID: 3796
+# Current directory: E:/FPGA-Projects/EGO1_VGA/EGO1_vga4/EGO1_vga4.runs/impl_1
+# Command line: vivado.exe -log vga4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga4.tcl -notrace
+# Log file: E:/FPGA-Projects/EGO1_VGA/EGO1_vga4/EGO1_vga4.runs/impl_1/vga4.vdi
+# Journal file: E:/FPGA-Projects/EGO1_VGA/EGO1_vga4/EGO1_vga4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vga4.tcl -notrace

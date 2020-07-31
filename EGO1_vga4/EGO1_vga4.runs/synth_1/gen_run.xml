@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1596112830">
-  <File Type="PA-TCL" Name="vga2.tcl"/>
-  <File Type="REPORTS-TCL" Name="vga2_reports.tcl"/>
-  <File Type="RDS-RDS" Name="vga2.vds"/>
-  <File Type="RDS-UTIL" Name="vga2_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="vga2_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="vga2.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1596160498">
+  <File Type="PA-TCL" Name="vga4.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="vga4_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="vga4_reports.tcl"/>
+  <File Type="RDS-RDS" Name="vga4.vds"/>
+  <File Type="RDS-UTIL" Name="vga4_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="vga4_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="vga4.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="vga4_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="vga4_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/vga2.v">
+    <File Path="$PSRCDIR/sources_1/new/vga4.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -17,13 +20,13 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="vga2"/>
+      <Option Name="TopModule" Val="vga4"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/vga2.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/vga4.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
