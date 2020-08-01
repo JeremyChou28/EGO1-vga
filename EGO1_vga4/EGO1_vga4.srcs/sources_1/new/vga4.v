@@ -12,7 +12,8 @@
 // Description: 基于EGO1实现VGA图像显示--通过取字模软件生成需要显示的文字
 //然后再将其像素信息转换成所需的字库，该字库以十六进制编码的形式
 //记录每个像素点的亮灭信息。
-// 
+// 对于时钟分频、行同步显示、场同步信号可以作为显示文字、字符、字母类的通用代码
+//只需要对显示位置、每一行需要显示的位数进行修改即可。
 // Dependencies: 
 // 
 // Revision:
@@ -34,7 +35,7 @@ module vga4(clk,rst_n,hsync,vsync,vga_r,vga_g,vga_b);
     reg [9:0]y_cnt; //列坐标
     reg clk_vga=0;  //vga时钟
     reg clk_cnt=0;  //分频计数
-    always @(posedge clk or negedge rst_n)
+    always @(posedge clk or negedge rst_n)//实现对系统时钟的分频得到vga_clk用于VGA图像显示时钟信号
         begin
             if(!rst_n)
                 clk_vga<=1'b0;
@@ -158,9 +159,9 @@ module vga4(clk,rst_n,hsync,vsync,vga_r,vga_g,vga_b);
     always @(posedge clk_vga or negedge rst_n)//在640*480阵列中选取位置显示字符“FPGA”
         begin
             if(!rst_n)
-                char_bit<=7'h7f;
+                char_bit<=8'h7f;
             else if(x_cnt==10'd400)
-                char_bit<=7'd128;   //先显示高位，依次递减
+                char_bit<=8'd128;   //先显示高位，依次递减
             else if(x_cnt>10'd400&&x_cnt<10'd528)
                 char_bit<=char_bit-1'b1;
         end
@@ -206,7 +207,7 @@ module vga4(clk,rst_n,hsync,vsync,vga_r,vga_g,vga_b);
                         10'd210: 
                             if(char_line0a[char_bit]) vga_rgb<= 12'b1111_1111_1111;
                             else vga_rgb<= 12'b000_0000_0000 ;
-                        10 'd211: 
+                        10'd211: 
                             if(char_line0b[ char_bit]) vga_rgb<= 12'b1111_1111_1111;
                             else vga_rgb<= 12'b000_0000_0000 ;
                         10'd212: 
