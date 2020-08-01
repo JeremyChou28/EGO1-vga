@@ -9,7 +9,7 @@
     <Object name="xc7a35t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/vga1.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/EGO1_vga5.runs/impl_1/vga5.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Aug  1 11:05:59 2020
-# Process ID: 11536
+# Start of session at: Sat Aug  1 16:00:02 2020
+# Process ID: 17588
 # Current directory: E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/EGO1_vga5.runs/impl_1
 # Command line: vivado.exe -log vga5.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga5.tcl -notrace
 # Log file: E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/EGO1_vga5.runs/impl_1/vga5.vdi

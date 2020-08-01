@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Aug  1 11:06:29 2020
+| Date         : Sat Aug  1 16:00:39 2020
 | Host         : DESKTOP-TSK87CH running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vga5_control_sets_placed.rpt
 | Design       : vga5
@@ -24,7 +24,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |     9 |
-| Unused register locations in slices containing registers |    43 |
+| Unused register locations in slices containing registers |    40 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,8 +35,7 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      1 |            4 |
-|      5 |            1 |
-|      8 |            1 |
+|      8 |            2 |
 |     11 |            1 |
 |     12 |            1 |
 |     13 |            1 |
@@ -50,10 +49,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               1 |            1 |
-| No           | No                    | Yes                    |              14 |            8 |
-| No           | Yes                   | No                     |              12 |            7 |
+| No           | No                    | Yes                    |              14 |            9 |
+| No           | Yes                   | No                     |              12 |            6 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              26 |           13 |
+| Yes          | No                    | Yes                    |              29 |           18 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -68,11 +67,11 @@ Table of Contents
 |  clk_IBUF_BUFG        |                   | x_cnt[10]_i_2_n_0   |                1 |              1 |
 |  clk_vga_reg_n_0_BUFG | hsync_r_i_1_n_0   | x_cnt[10]_i_2_n_0   |                1 |              1 |
 |  clk_vga_reg_n_0_BUFG | vsync_r_i_1_n_0   | x_cnt[10]_i_2_n_0   |                1 |              1 |
-|  clk_vga_reg_n_0_BUFG | char_bit          | x_cnt[10]_i_2_n_0   |                3 |              5 |
-|  clk_vga_reg_n_0_BUFG | char_bit_1        | x_cnt[10]_i_2_n_0   |                3 |              8 |
-|  clk_vga_reg_n_0_BUFG | y_cnt[10]_i_1_n_0 | x_cnt[10]_i_2_n_0   |                5 |             11 |
-|  clk_vga_reg_n_0_BUFG |                   | vga_rgb[11]_i_1_n_0 |                7 |             12 |
-|  clk_vga_reg_n_0_BUFG |                   | x_cnt[10]_i_2_n_0   |                7 |             13 |
+|  clk_vga_reg_n_0_BUFG | char_bit_1        | x_cnt[10]_i_2_n_0   |                5 |              8 |
+|  clk_vga_reg_n_0_BUFG | char_bit          | x_cnt[10]_i_2_n_0   |                3 |              8 |
+|  clk_vga_reg_n_0_BUFG | y_cnt[10]_i_1_n_0 | x_cnt[10]_i_2_n_0   |                8 |             11 |
+|  clk_vga_reg_n_0_BUFG |                   | vga_rgb[11]_i_1_n_0 |                6 |             12 |
+|  clk_vga_reg_n_0_BUFG |                   | x_cnt[10]_i_2_n_0   |                8 |             13 |
 +-----------------------+-------------------+---------------------+------------------+----------------+
 
 

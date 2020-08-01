@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sat Aug  1 11:06:58 2020
+| Date             : Sat Aug  1 16:01:09 2020
 | Host             : DESKTOP-TSK87CH running 64-bit major release  (build 9200)
 | Command          : report_power -file vga5_power_routed.rpt -pb vga5_power_summary_routed.pb -rpx vga5_power_routed.rpx
 | Design           : vga5
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.043        |
+| Total On-Chip Power (W)  | 1.054        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.969        |
+| Dynamic (W)              | 0.980        |
 | Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 4.8          |
 | Max Ambient (C)          | 80.0         |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.534 |      268 |       --- |             --- |
-|   LUT as Logic |     0.493 |      176 |     20800 |            0.85 |
+| Slice Logic    |     0.538 |      352 |       --- |             --- |
+|   LUT as Logic |     0.494 |      230 |     20800 |            1.11 |
 |   BUFG         |     0.029 |        2 |        32 |            6.25 |
-|   Register     |     0.011 |       53 |     41600 |            0.13 |
-|   F7/F8 Muxes  |     0.001 |        5 |     32600 |            0.02 |
+|   Register     |     0.010 |       56 |     41600 |            0.13 |
+|   F7/F8 Muxes  |     0.005 |       22 |     32600 |            0.07 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.375 |      223 |       --- |             --- |
-| I/O            |     0.060 |       16 |       210 |            7.62 |
+| Signals        |     0.395 |      274 |       --- |             --- |
+| I/O            |     0.048 |       16 |       210 |            7.62 |
 | Static Power   |     0.074 |          |           |                 |
-| Total          |     1.043 |          |           |                 |
+| Total          |     1.054 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.925 |       0.913 |      0.011 |
-| Vccaux    |       1.800 |     0.015 |       0.002 |      0.013 |
-| Vcco33    |       3.300 |     0.017 |       0.016 |      0.001 |
+| Vccint    |       1.000 |     0.948 |       0.936 |      0.011 |
+| Vccaux    |       1.800 |     0.014 |       0.002 |      0.013 |
+| Vcco33    |       3.300 |     0.013 |       0.012 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,7 +138,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| vga5 |     0.969 |
+| vga5 |     0.980 |
 +------+-----------+
 
 

@@ -14,27 +14,27 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10852 
+INFO: Helper process launched with PID 9896 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 363.824 ; gain = 101.133
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 364.098 ; gain = 101.613
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'vga5' [E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/vga5.v:24]
-	Parameter char_line0 bound to: 24'b000000000000000000000000 
-	Parameter char_line1 bound to: 24'b000000000000000000000000 
-	Parameter char_line2 bound to: 24'b000000000000000000000000 
-	Parameter char_line3 bound to: 24'b111001110011110000010000 
-	Parameter char_line4 bound to: 24'b010000100100010000010000 
-	Parameter char_line5 bound to: 24'b010000100100010000011000 
-	Parameter char_line6 bound to: 24'b010001001000000000101000 
-	Parameter char_line7 bound to: 24'b001001001000000000101000 
-	Parameter char_line8 bound to: 24'b001001001000000000101000 
-	Parameter char_line9 bound to: 24'b001010001000111000111100 
-	Parameter char_linea bound to: 24'b001010001000010001000100 
-	Parameter char_lineb bound to: 24'b000110000100010001000010 
-	Parameter char_linec bound to: 24'b000100000100010001000010 
-	Parameter char_lined bound to: 24'b000100000011100011100111 
-	Parameter char_linee bound to: 24'b000000000000000000000000 
-	Parameter char_linef bound to: 24'b000000000000000000000000 
+	Parameter char_line0 bound to: 208'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111100000010001000000000001000100000100000010000010000000000000000000000000000000000000000000100000000000010000000000000 
+	Parameter char_line1 bound to: 208'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000100000010001001111100000100010000100000010000001000000000000000000000000000000000000000000010000000000001001111111100 
+	Parameter char_line2 bound to: 208'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111100000111111101000100000100010001000000010000001000000000000000000000000000000000000000000001000000000001000000000100 
+	Parameter char_line3 bound to: 208'b0011110000011000001111000001100011100111001100000001000000110000000000000000000000010000000100000010001001000100000000000010000000010001111111101111110011111100001111000001000000000001000000000100000000000100 
+	Parameter char_line4 bound to: 208'b0100001000100100010000100010010001000010001100000111000000110000000000000000000000011111111100000010001001000100011111111111111011111100000000000100001001000010010001000001000000000001000000000100000000000100 
+	Parameter char_line5 bound to: 208'b0100001001000010010000100100001000100100000000000001000000000000000000000000000000000010000000000011111001111100010000000000001000010000100010000100100001000010010001000001100000000010100000000100000000000100 
+	Parameter char_line6 bound to: 208'b0100001001000010010000100100001000100100000000000001000000000000000000000000000000011111110100000010001001000100100000000000010000110001000001000100100001000010100000000010100000000010100000000100000000000100 
+	Parameter char_line7 bound to: 208'b0000001001000010000000100100001000011000011100000001000001110000110111000111011000000010001000000010001001000100000111111110000000111010000000100111100001000010100000000010100000000010100000000100000000000100 
+	Parameter char_line8 bound to: 208'b0000010001000010000001000100001000011000000100000001000000010000011000100010010011111111111111100011111001000100000000000100000001010100100010000100100001111100100000000010010000000100010000000100000000000100 
+	Parameter char_line9 bound to: 208'b0000100001000010000010000100001000011000000100000001000000010000010000100001100000000011000000000010001001111100000000011000000001010000100010000100100001000000100011100011110000000100010000000100000000000100 
+	Parameter char_linea bound to: 208'b0001000001000010000100000100001000100100000100000001000000010000010000100001100000001111111100000010001001000100111111111111111010010000010100000100000001000000100001000100010000001000001000000100000000000100 
+	Parameter char_lineb bound to: 208'b0010000001000010001000000100001000100100000100000001000000010000010000100001100000111000000100001111111101000100000000010000000000010000010100000100000001000000010001000100001000001000001000000100000000000100 
+	Parameter char_linec bound to: 208'b0100001000100100010000100010010001000010000100000001000000010000010000100010010011001111111100000000010010000100000000010000000000010000001000000100000001000000010001000100001000010000000100000100000000000100 
+	Parameter char_lined bound to: 208'b0111111000011000011111100001100011100111011111000111110001111100111001110110111000001000000100000010001010000100000000010000000000010000010100001110000011100000001110001110011100100000000100000100000000000100 
+	Parameter char_linee bound to: 208'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111100000100000100010100000001010000000000010000100010000000000000000000000000000000000001000000000010000100000000010100 
+	Parameter char_linef bound to: 208'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000100001000001000001000000000100000000000010011000001100000000000000000000000000000000010000000000001100100000000001000 
 	Parameter char_line_0 bound to: 184'b0000000100000000000000100000000000000001000000000010001000001000000000010000000000010000000000000010001000001000000000010000000000000000000000000000000000010000001000000000000000000000 
 	Parameter char_line_1 bound to: 184'b0000000100000000000000100000000000000001000000000001000100001000001000010000100000001000000001000001000100001000000100010001000000000000001111111111100000010000001000000111111111111100 
 	Parameter char_line_2 bound to: 184'b0000000100000000000000100000000000000001000000000001000100010000001000010000100001111111011110000001000100010000000010010010000000000000001000010000100000010000111111000000000100000000 
@@ -51,10 +51,11 @@ INFO: [Synth 8-6157] synthesizing module 'vga5' [E:/FPGA-Projects/EGO1_VGA/EGO1_
 	Parameter char_line_d bound to: 184'b0011111111111000010000010000010000010000000100000000000100000000001000010000100010001000100010000000000100000000000000010000000000000000010000000000100000100110001000000000000100000000 
 	Parameter char_line_e bound to: 184'b0000000000001000000001010000000000100000000010000000010100000000010001010000010000101000100010000000010100000000111111111111111000000000010000000010100000101001111111100000000100000000 
 	Parameter char_line_f bound to: 184'b0000000000000000000000100000000011000000000001100000001000000000000000100000000000010001000010000000001000000000000000000000000000000000100000000001000000110000000000000000000100000000 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/vga5.v:241]
 WARNING: [Synth 8-5788] Register clk_cnt_reg in module vga5 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/vga5.v:42]
 INFO: [Synth 8-6155] done synthesizing module 'vga5' (1#1) [E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/vga5.v:24]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 419.840 ; gain = 157.148
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 419.902 ; gain = 157.418
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -67,10 +68,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 419.840 ; gain = 157.148
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 419.902 ; gain = 157.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 419.840 ; gain = 157.148
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 419.902 ; gain = 157.418
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -81,37 +82,37 @@ Parsing XDC File [E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/vga5.xdc]
 Finished Parsing XDC File [E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/vga5.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/vga5.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga5_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/vga5_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 739.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 746.566 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 739.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 746.566 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 739.531 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 739.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 746.566 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 746.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 739.531 ; gain = 476.840
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 746.566 ; gain = 484.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 739.531 ; gain = 476.840
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 746.566 ; gain = 484.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 739.531 ; gain = 476.840
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 746.566 ; gain = 484.082
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "valid_yr" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 739.531 ; gain = 476.840
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 746.566 ; gain = 484.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -125,21 +126,17 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
 	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 1     
 	               11 Bit    Registers := 2     
-	                8 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	  17 Input     12 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 13    
+	   2 Input     12 Bit        Muxes := 19    
 	   2 Input     11 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 13    
 	   3 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
@@ -153,21 +150,17 @@ Module vga5
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     11 Bit       Adders := 2     
-	   2 Input      8 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
 	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 1     
 	               11 Bit    Registers := 2     
-	                8 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	  17 Input     12 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 13    
+	   2 Input     12 Bit        Muxes := 19    
 	   2 Input     11 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 13    
 	   3 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
@@ -202,7 +195,7 @@ INFO: [Synth 8-3886] merging instance 'vga_rgb_reg[8]' (FDR) to 'vga_rgb_reg[11]
 INFO: [Synth 8-3886] merging instance 'vga_rgb_reg[9]' (FDR) to 'vga_rgb_reg[11]'
 INFO: [Synth 8-3886] merging instance 'vga_rgb_reg[10]' (FDR) to 'vga_rgb_reg[11]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 739.531 ; gain = 476.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 746.566 ; gain = 484.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -214,13 +207,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 742.492 ; gain = 479.801
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 746.566 ; gain = 484.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 742.719 ; gain = 480.027
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 746.566 ; gain = 484.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -232,7 +225,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 765.254 ; gain = 502.563
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 765.188 ; gain = 502.703
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -256,7 +249,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 765.254 ; gain = 502.563
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 765.188 ; gain = 502.703
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -269,7 +262,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 765.254 ; gain = 502.563
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 765.188 ; gain = 502.703
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -281,25 +274,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 765.254 ; gain = 502.563
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 765.188 ; gain = 502.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 765.254 ; gain = 502.563
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 765.188 ; gain = 502.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 765.254 ; gain = 502.563
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 765.188 ; gain = 502.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 765.254 ; gain = 502.563
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 765.188 ; gain = 502.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -317,14 +310,14 @@ Report Cell Usage:
 +------+------+------+
 |1     |BUFG  |     2|
 |2     |LUT1  |     1|
-|3     |LUT2  |    15|
-|4     |LUT3  |    15|
-|5     |LUT4  |    25|
-|6     |LUT5  |    46|
-|7     |LUT6  |   104|
-|8     |MUXF7 |     5|
-|9     |FDCE  |    25|
-|10    |FDPE  |    15|
+|3     |LUT2  |    27|
+|4     |LUT3  |    16|
+|5     |LUT4  |    37|
+|6     |LUT5  |    21|
+|7     |LUT6  |   168|
+|8     |MUXF7 |    22|
+|9     |FDCE  |    27|
+|10    |FDPE  |    16|
 |11    |FDRE  |     4|
 |12    |IBUF  |     2|
 |13    |OBUF  |    14|
@@ -334,30 +327,30 @@ Report Instance Areas:
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |   273|
+|1     |top      |       |   357|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 765.254 ; gain = 502.563
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 765.188 ; gain = 502.703
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 765.254 ; gain = 182.871
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 765.254 ; gain = 502.563
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 765.188 ; gain = 176.039
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 765.188 ; gain = 502.703
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.254 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.188 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+34 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 765.254 ; gain = 515.457
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 765.254 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 765.188 ; gain = 515.996
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.188 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/FPGA-Projects/EGO1_VGA/EGO1_vga5/EGO1_vga5.runs/synth_1/vga5.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vga5_utilization_synth.rpt -pb vga5_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 11:05:51 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 15:59:53 2020...

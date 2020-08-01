@@ -125,22 +125,22 @@ module vga5(
     //然后再合并同一行的字模数据，得到逐行显示的charline数据
     parameter     
         //显示的英文字符 VGA
-        char_line0 = 24'h000000,
-        char_line1 = 24'h000000,
-        char_line2 = 24'h000000,
-        char_line3 = 24'hE73C10,
-        char_line4 = 24'h424410,
-        char_line5 = 24'h424418,
-        char_line6 = 24'h448028,
-        char_line7 = 24'h248028,
-        char_line8 = 24'h248028,
-        char_line9 = 24'h288E3C,
-        char_linea = 24'h288444,
-        char_lineb = 24'h184442,
-        char_linec = 24'h104442,
-        char_lined = 24'h1038E7,
-        char_linee = 24'h000000,
-        char_linef = 24'h000000,
+        char_line0 = 208'h000000000000000000001FF02200220810400000000004002000,
+        char_line1 = 208'h000000000000000000001010227C1108102000000000020013FC,
+        char_line2 = 208'h000000000000000000001FF07F44111010200000000001001004,
+        char_line3 = 208'h3C183C18E7301030000010102244002011FEFCFC3C1001004004,
+        char_line4 = 208'h422442244230703000001FF022447FFEFC004242441001004004,
+        char_line5 = 208'h4242424224001000000002003E7C400210884842441802804004,
+        char_line6 = 208'h424242422400100000001FD02244800431044842802802804004,
+        char_line7 = 208'h0242024218701070DC76022022441FE03A027842802802804004,
+        char_line8 = 208'h04420442181010106224FFFE3E4400405488487C802404404004,
+        char_line9 = 208'h084208421810101042180300227C0180508848408E3C04404004,
+        char_linea = 208'h104210422410101042180FF02244FFFE90504040844408204004,
+        char_lineb = 208'h204220422410101042183810FF44010010504040444208204004,
+        char_linec = 208'h42244224421010104224CFF00484010010204040444210104004,
+        char_lined = 208'h7E187E18E77C7C7CE76E0810228401001050E0E038E720104004,
+        char_linee = 208'h000000000000000000000FF04114050010880000000040084014,
+        char_linef = 208'h0000000000000000000008108208020013060000000080064008,
         //要显示的汉字 山东大学崇新学堂-周健平
         char_line_0 = 184'h0100_0200_0100_2208_0100_1000_2208_0100_00_0000_1020_0000,
         char_line_1 = 184'h0100_0200_0100_1108_2108_0804_1108_1110_00_3ff8_1020_7ffc,
@@ -158,15 +158,15 @@ module vga5(
         char_line_d = 184'h3ff8_4104_1010_0100_2108_8888_0100_0100_00_4008_2620_0100,
         char_line_e = 184'h0008_0500_2008_0500_4504_2888_0500_fffe_00_4028_29fe_0100,
         char_line_f = 184'h0000_0200_c006_0200_0200_1108_0200_0000_00_8010_3000_0100;
-    reg[4:0] char_bit;    //显示位计算
+    reg[7:0] char_bit;    //显示位计算
     reg[7:0] char_bit_1;
     always @(posedge clk_vga or negedge rst_n)//在640*480阵列中选取位置显示字符“FPGA”
         begin
             if(!rst_n)
-                    char_bit<=8'h1f;
-            else if(x_cnt==10'd442)
-                char_bit<=5'd23;   //先显示高位，依次递减
-            else if(x_cnt>10'd442&&x_cnt<10'd466)
+                    char_bit<=8'hcf;
+            else if(x_cnt==10'd380)
+                char_bit<=8'd208;   //先显示高位，依次递减
+            else if(x_cnt>10'd380&&x_cnt<10'd589)
                 char_bit<=char_bit-1'b1;
         end
     always @(posedge clk_vga or negedge rst_n)//在640*480阵列中选取位置显示字符"山东大学崇新学堂-周健平"
@@ -184,8 +184,60 @@ module vga5(
         begin
             if(!valid)
                 vga_rgb<=12'b0000_0000_0000;
-            else if(x_cnt>10'd401&&x_cnt<10'd584)//如果用400，山字前面出现一竖
+            else if(x_cnt > 10'd370 && x_cnt < 10'd600)
                 begin
+                    case(y_dis)
+                        10'd180: 
+                            if(char_line0[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd181: 
+                            if(char_line1[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd182: 
+                            if(char_line2[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd183: 
+                            if(char_line3[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd184: 
+                            if(char_line4[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd185: 
+                            if(char_line5[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd186: 
+                            if(char_line6[char_bit]) vga_rgb <=12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd187: 
+                            if(char_line7[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd188: 
+                            if(char_line8[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd189: 
+                            if(char_line9[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色
+                        10'd190: 
+                            if(char_linea[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色                                             
+                        10'd191: 
+                            if(char_lineb[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色             
+                        10'd192: 
+                            if(char_linec[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色    
+                        10'd193: 
+                            if(char_lined[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色    
+                        10'd194: 
+                            if(char_linee[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色    
+                        10'd195: 
+                            if(char_linef[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
+                            else vga_rgb <= 12'b0000_1111_0000;    //绿色                                        
+                        default: vga_rgb <= 12'h000;
+                    endcase
+                if(x_cnt>10'd401 && x_cnt<10'd584)//如果用400，山字前面出现一竖
                     case(y_dis)
                         10'd215: 
                             if(char_line_0[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;              
@@ -235,114 +287,12 @@ module vga5(
                         10'd230: 
                             if(char_line_f[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
                             else vga_rgb<= 12'b0000_0000_0000;                                       
-                        default: vga_rgb <= 12'h000;
+                        //default: vga_rgb <= 12'h000;//这里如果加上不容易产生自锁现象，但是加上会出现文字的覆盖
                     endcase
-                    if(x_cnt > 10'd442 && x_cnt < 10'd467)
-                        begin
-                            case(y_dis)
-                                10'd215: 
-                                    if(char_line_0[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;              
-                                    else vga_rgb<= 12'b0000_0000_0000;
-                                10'd216: 
-                                    if(char_line_1[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000 ;
-                                10'd217: 
-                                    if(char_line_2[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000;
-                                10'd218: 
-                                    if(char_line_3[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000;
-                                10'd219: 
-                                    if(char_line_4[char_bit_1])vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000 ;
-                                10'd220: 
-                                    if(char_line_5[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000;
-                                10'd221: 
-                                    if(char_line_6[char_bit_1])vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000;
-                                10'd222: 
-                                    if(char_line_7[char_bit_1])vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000;
-                                10'd223: 
-                                    if(char_line_8[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000 ;
-                                10'd224: 
-                                    if(char_line_9[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000 ;
-                                10'd225: 
-                                    if(char_line_a[char_bit_1])vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000 ;
-                                10'd226: 
-                                    if(char_line_b[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000 ;
-                                10'd227: 
-                                    if(char_line_c[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000;
-                                10'd228: 
-                                    if(char_line_d[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000 ;
-                                10'd229: 
-                                    if(char_line_e[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000;
-                                10'd230: 
-                                    if(char_line_f[char_bit_1]) vga_rgb<= 12'b1111_1111_1111;
-                                    else vga_rgb<= 12'b0000_0000_0000;  
-                                10'd231: 
-                                    if(char_line0[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd232: 
-                                    if(char_line1[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd233: 
-                                    if(char_line2[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd234: 
-                                    if(char_line3[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd235: 
-                                    if(char_line4[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd236: 
-                                    if(char_line5[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd237: 
-                                    if(char_line6[char_bit]) vga_rgb <=12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd238: 
-                                    if(char_line7[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd239: 
-                                    if(char_line8[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd240: 
-                                    if(char_line9[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色
-                                10'd241: 
-                                    if(char_linea[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色                                             
-                                10'd242: 
-                                    if(char_lineb[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色             
-                                10'd243: 
-                                    if(char_linec[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色    
-                                10'd244: 
-                                    if(char_lined[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色    
-                                10'd245: 
-                                    if(char_linee[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色    
-                                10'd246: 
-                                    if(char_linef[char_bit]) vga_rgb <= 12'b1111_0000_0000;    //红色
-                                    else vga_rgb <= 12'b0000_1111_0000;    //绿色                                        
-                                default: vga_rgb <= 12'h000;
-                            endcase
-                        end
-                end 
+                 end                 
             else vga_rgb<= 12'h000;          
         end
-    //r,g,b控制液晶屏颜色显示
+//r,g,b控制液晶屏颜色显示
 //    assign {VGA_R[3:0],VGA_G[3:0],VGA_B[3:0]} = {1'b0,vga_rgb[7:5],1'b0,vga_rgb[4:2],2'b00,vga_rgb[1:0]} ;
         assign {VGA_R[3:0],VGA_G[3:0],VGA_B[3:0]} = {vga_rgb[11:8],vga_rgb[7:4],vga_rgb[3:0]} ;
 endmodule
